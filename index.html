@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Haven Land Partners</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .fade-in { opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease-out, transform 0.6s ease-out; }
+      .fade-in.visible { opacity: 1; transform: translateY(0); }
+      .card-hover:hover { transform: translateY(-6px); box-shadow: 0 10px 20px rgba(0,0,0,0.15); }
+      .parallax { background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover; }
+    </style>
+  </head>
+  <body class="bg-white text-slate-800">
+    <!-- Header -->
+    <header class="bg-white border-b border-slate-200 shadow-md sticky top-0 z-50">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+        <span class="font-bold tracking-tight text-lg">Haven Land Partners</span>
+        <nav class="hidden md:flex items-center gap-6 text-sm font-medium">
+          <a href="#how" class="hover:text-emerald-700 transition">How It Works</a>
+          <a href="#why" class="hover:text-emerald-700 transition">Why Us</a>
+          <a href="#testimonials" class="hover:text-emerald-700 transition">Testimonials</a>
+          <a href="#about" class="hover:text-emerald-700 transition">About</a>
+          <a href="#contact" class="inline-flex items-center rounded-xl bg-emerald-600 px-4 py-2 text-white shadow hover:bg-emerald-700 transition">Get an Offer</a>
+        </nav>
+        <button id="menu-btn" class="md:hidden flex items-center px-3 py-2 border rounded text-slate-700 border-slate-400">
+          <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </div>
+      <div id="mobile-menu" class="hidden md:hidden px-4 pb-4">
+        <a href="#how" class="block py-2">How It Works</a>
+        <a href="#why" class="block py-2">Why Us</a>
+        <a href="#testimonials" class="block py-2">Testimonials</a>
+        <a href="#about" class="block py-2">About</a>
+        <a href="#contact" class="block py-2 text-emerald-600 font-semibold">Get an Offer</a>
+      </div>
+    </header>
+
+    <!-- Hero Section with updated text -->
+    <section class="relative h-[36rem] flex items-center justify-center text-center text-white parallax" style="background-image: url('https://images.unsplash.com/photo-1473773508845-188df298d2d1?auto=format&fit=crop&w=1600&q=80')">
+      <div class="absolute inset-0 bg-black/40"></div>
+      <div class="relative z-10 max-w-4xl mx-auto px-4 fade-in">
+        <h1 class="text-5xl md:text-6xl font-extrabold drop-shadow-lg">PROVIDING YOU FREEDOM THROUGH LAND</h1>
+        <p class="mt-4 text-xl md:text-2xl text-slate-100">Helping Land Owners Sell Unwanted Vacant Land.<br/>Aligning Buyers To Their Future Property.</p>
+        <div class="mt-6 flex flex-col sm:flex-row gap-3 justify-center">
+          <a href="#contact" class="inline-flex items-center justify-center rounded-xl bg-emerald-600 px-6 py-3 text-white font-semibold shadow-lg hover:scale-105 transform transition">Get My Free Offer</a>
+          <a href="#how" class="inline-flex items-center justify-center rounded-xl border border-white px-6 py-3 font-medium bg-white/10 hover:bg-white/20 transition">Learn How It Works</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- How It Works -->
+    <section id="how" class="py-20 lg:py-28 bg-slate-50 fade-in">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <h2 class="text-4xl font-extrabold text-slate-900 text-center">How It Works</h2>
+        <div class="mt-12 grid gap-8 md:grid-cols-3">
+          <div class="bg-white rounded-2xl shadow card-hover transition p-6 text-center">
+            <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=800&q=80" class="h-40 w-full object-cover rounded-xl mb-4"/>
+            <h3 class="font-semibold text-lg">1. Tell Us About Your Land</h3>
+            <p class="mt-2 text-slate-600 text-sm">Fill out our quick form with your property details. No obligations, just information.</p>
+          </div>
+          <div class="bg-white rounded-2xl shadow card-hover transition p-6 text-center">
+            <img src="https://images.unsplash.com/photo-1473186505569-9c61870c11f9?auto=format&fit=crop&w=800&q=80" class="h-40 w-full object-cover rounded-xl mb-4"/>
+            <h3 class="font-semibold text-lg">2. Get a Fair Cash Offer</h3>
+            <p class="mt-2 text-slate-600 text-sm">We’ll review comps and land data, then send you a straightforward cash offer.</p>
+          </div>
+          <div class="bg-white rounded-2xl shadow card-hover transition p-6 text-center">
+            <img src="https://tse3.mm.bing.net/th/id/OIP.I-Qp4GFFK3jQuwqPbXowPwHaD4?pid=Api" class="h-40 w-full object-cover rounded-xl mb-4"/>
+            <h3 class="font-semibold text-lg">3. Close Quickly</h3>
+            <p class="mt-2 text-slate-600 text-sm">We handle the paperwork and closing costs. You choose the timeline and get paid.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section id="why" class="py-20 lg:py-28 fade-in">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-12 items-center">
+        <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=1200&q=80" class="rounded-2xl shadow-xl object-cover w-full h-80"/>
+        <div>
+          <h2 class="text-4xl font-extrabold text-slate-900">Why Choose Haven Land Partners?</h2>
+          <ul class="mt-6 space-y-3 text-slate-700">
+            <li class="flex items-center gap-2">✔ <span>No commissions, fees, or hidden costs</span></li>
+            <li class="flex items-center gap-2">✔ <span>We pay closing costs</span></li>
+            <li class="flex items-center gap-2">✔ <span>Sell as-is — no cleanup required</span></li>
+            <li class="flex items-center gap-2">✔ <span>Transparent, simple process</span></li>
+            <li class="flex items-center gap-2">✔ <span>Local, friendly team you can trust</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="py-20 lg:py-28 parallax" style="background-image: url('https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=1600&q=80')">
+      <div class="bg-black/60 py-12 fade-in">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center text-white">
+          <h2 class="text-4xl font-extrabold">What Sellers Say</h2>
+          <div class="mt-10 grid gap-6 md:grid-cols-3">
+            <figure class="rounded-2xl bg-white/95 p-6 text-slate-800 shadow card-hover transition">
+              <blockquote>“They made selling so easy. I got cash fast and didn’t pay a dime.”</blockquote>
+              <figcaption class="mt-3 text-sm text-slate-600">— Sarah K.</figcaption>
+            </figure>
+            <figure class="rounded-2xl bg-white/95 p-6 text-slate-800 shadow card-hover transition">
+              <blockquote>“Trustworthy and professional. Highly recommend.”</blockquote>
+              <figcaption class="mt-3 text-sm text-slate-600">— Mark T.</figcaption>
+            </figure>
+            <figure class="rounded-2xl bg-white/95 p-6 text-slate-800 shadow card-hover transition">
+              <blockquote>“The process was quick and smooth. Great communication.”</blockquote>
+              <figcaption class="mt-3 text-sm text-slate-600">— Lisa G.</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Us -->
+    <section id="about" class="py-20 lg:py-28 bg-slate-50 fade-in">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <h2 class="text-4xl font-extrabold text-slate-900">About Haven Land Partners</h2>
+          <p class="mt-4 text-slate-600">
+            Haven Land Partners was founded by Ridge and Daniel, two entrepreneurs who understand how overwhelming owning unwanted land can feel. After years of building businesses together, they realized there was a better way to help landowners move forward — with honesty, transparency, and respect.
+          </p>
+          <p class="mt-4 text-slate-600">
+            They created Haven Land Partners to give landowners peace of mind: a simple process, a fair cash offer, and a partner you can trust to take care of the details. Whether you inherited land you don’t need, are behind on property taxes, or simply want to move on, Ridge and Daniel are here to make it stress-free.
+          </p>
+          <p class="mt-4 text-slate-600">
+            Their mission is in the name — to be a haven for landowners. With clear communication, no hidden fees, and a reputation for treating people like neighbors, Haven Land Partners is built on values that matter.
+          </p>
+        </div>
+        <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1200&q=80" class="rounded-2xl shadow-xl object-cover w-full h-80"/>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-20 lg:py-28 bg-white fade-in">
+      <div class="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-4xl font-extrabold text-slate-900">Request Your Free Cash Offer</h2>
+        <p class="mt-3 text-slate-600">Fill out the form and our team will reach out within 24 hours.</p>
+        <form class="mt-8 grid gap-4 text-left bg-slate-50 p-6 rounded-2xl shadow card-hover transition max-w-2xl mx-auto">
+          <label class="text-sm">Full Name
+            <input required class="mt-1 w-full rounded-xl border border-slate-300 px-3 py-2"/>
+          </label>
+          <label class="text-sm">Phone
+            <input required class="mt-1 w-full rounded-xl border border-slate-300 px-3 py-2"/>
+          </label>
+          <label class="text-sm">Email
+            <input type="email" required class="mt-1 w-full rounded-xl border border-slate-300 px-3 py-2"/>
+          </label>
+          <label class="text-sm">County & State
+            <input class="mt-1 w-full rounded-xl border border-slate-300 px-3 py-2"/>
+          </label>
+          <label class="text-sm">Notes
+            <textarea rows="4" class="mt-1 w-full rounded-xl border border-slate-300 px-3 py-2"></textarea>
+          </label>
+          <button class="mt-2 rounded-xl bg-emerald-600 px-6 py-3 font-semibold text-white shadow-lg hover:scale-105 transform transition">Submit</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-200 bg-white">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-8 text-sm text-slate-500 flex flex-col md:flex-row items-center justify-between gap-4">
+        <p>© 2025 Haven Land Partners. All rights reserved.</p>
+        <div class="flex items-center gap-6">
+          <a href="#how" class="hover:text-emerald-700 transition">How It Works</a>
+          <a href="#contact" class="hover:text-emerald-700 transition">Contact</a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+          }
+        });
+      }, { threshold: 0.1 });
+
+      document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+      // Mobile menu toggle
+      document.getElementById('menu-btn').addEventListener('click', () => {
+        document.getElementById('mobile-menu').classList.toggle('hidden');
+      });
+    </script>
+  </body>
+</html>
