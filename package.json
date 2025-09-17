@@ -1,0 +1,12 @@
+{
+  "name": "haven-land-partners",
+  "version": "1.0.0",
+  "description": "Haven Land Partners website",
+  "main": "index.js",
+  "scripts": {
+    "start": "vercel dev"
+  },
+  "dependencies": {
+    "nodemailer": "^6.9.8"
+  }
+}
