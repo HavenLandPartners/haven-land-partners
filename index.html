@@ -15,29 +15,39 @@
   <body class="bg-white text-slate-800">
     <!-- Header -->
     <header class="bg-white border-b border-slate-200 shadow-md sticky top-0 z-50">
-      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-        <span class="font-bold tracking-tight text-lg">Haven Land Partners</span>
-        <nav class="hidden md:flex items-center gap-6 text-sm font-medium">
-          <a href="#how" class="hover:text-emerald-700 transition">How It Works</a>
-          <a href="#why" class="hover:text-emerald-700 transition">Why Us</a>
-          <a href="#testimonials" class="hover:text-emerald-700 transition">Testimonials</a>
-          <a href="#about" class="hover:text-emerald-700 transition">About</a>
-          <a href="#contact" class="inline-flex items-center rounded-xl bg-emerald-600 px-4 py-2 text-white shadow hover:bg-emerald-700 transition">Get an Offer</a>
-        </nav>
-        <button id="menu-btn" class="md:hidden flex items-center px-3 py-2 border rounded text-slate-700 border-slate-400">
-          <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
-          </svg>
-        </button>
-      </div>
-      <div id="mobile-menu" class="hidden md:hidden px-4 pb-4">
-        <a href="#how" class="block py-2">How It Works</a>
-        <a href="#why" class="block py-2">Why Us</a>
-        <a href="#testimonials" class="block py-2">Testimonials</a>
-        <a href="#about" class="block py-2">About</a>
-        <a href="#contact" class="block py-2 text-emerald-600 font-semibold">Get an Offer</a>
-      </div>
-    </header>
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+    <!-- Logo + Brand -->
+    <a href="index.html" class="flex items-center gap-2">
+      <img src="logo.jpg" alt="Haven Land Partners Logo" class="h-8 w-8 object-contain"/>
+      <span class="font-bold tracking-tight text-lg">Haven Land Partners</span>
+    </a>
+
+    <!-- Desktop Nav -->
+    <nav class="hidden md:flex items-center gap-6 text-sm font-medium">
+      <a href="#how" class="hover:text-emerald-700 transition">How It Works</a>
+      <a href="#why" class="hover:text-emerald-700 transition">Why Us</a>
+      <a href="#testimonials" class="hover:text-emerald-700 transition">Testimonials</a>
+      <a href="#about" class="hover:text-emerald-700 transition">About</a>
+      <a href="#contact" class="inline-flex items-center rounded-xl bg-emerald-600 px-4 py-2 text-white shadow hover:bg-emerald-700 transition">Get an Offer</a>
+    </nav>
+
+    <!-- Mobile Menu Button -->
+    <button id="menu-btn" class="md:hidden flex items-center px-3 py-2 border rounded text-slate-700 border-slate-400">
+      <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+      </svg>
+    </button>
+  </div>
+
+  <!-- Mobile Nav -->
+  <div id="mobile-menu" class="hidden md:hidden px-4 pb-4">
+    <a href="#how" class="block py-2">How It Works</a>
+    <a href="#why" class="block py-2">Why Us</a>
+    <a href="#testimonials" class="block py-2">Testimonials</a>
+    <a href="#about" class="block py-2">About</a>
+    <a href="#contact" class="block py-2 text-emerald-600 font-semibold">Get an Offer</a>
+  </div>
+</header>
 
     <!-- Hero Section with updated text -->
     <section class="relative h-[36rem] flex items-center justify-center text-center text-white parallax" style="background-image: url('https://images.unsplash.com/photo-1473773508845-188df298d2d1?auto=format&fit=crop&w=1600&q=80')">
