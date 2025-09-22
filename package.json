@@ -2,6 +2,7 @@
   "name": "haven-land-partners",
   "version": "1.0.0",
   "description": "Haven Land Partners website",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "start": "vercel dev"
