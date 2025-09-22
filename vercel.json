@@ -1,17 +1,7 @@
 {
   "redirects": [
     {
-      "source": "http://www.havenlandpartners.com/(.*)",
-      "destination": "https://havenlandpartners.com/$1",
-      "permanent": true
-    },
-    {
-      "source": "http://havenlandpartners.com/(.*)",
-      "destination": "https://havenlandpartners.com/$1",
-      "permanent": true
-    },
-    {
-      "source": "https://www.havenlandpartners.com/(.*)",
+      "source": "/(.*)",
       "destination": "https://havenlandpartners.com/$1",
       "permanent": true
     }
