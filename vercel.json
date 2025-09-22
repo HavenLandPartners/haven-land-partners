@@ -1,9 +1,0 @@
-{
-  "redirects": [
-    {
-      "source": "/(.*)",
-      "destination": "https://havenlandpartners.com/$1",
-      "permanent": true
-    }
-  ]
-}
